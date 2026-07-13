@@ -7,6 +7,7 @@
     <title>꿈빛마을 | AI 포트폴리오</title>
     <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
     <script src="./house-names.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer@4.1.0/dist/model-viewer.min.js"></script>
     <script type="module" crossorigin>(function(){const A=document.createElement("link").relList;if(A&&A.supports&&A.supports("modulepreload"))return;for(const i of document.querySelectorAll('link[rel="modulepreload"]'))C(i);new MutationObserver(i=>{for(const B of i)if(B.type==="childList")for(const e of B.addedNodes)e.tagName==="LINK"&&e.rel==="modulepreload"&&C(e)}).observe(document,{childList:!0,subtree:!0});function I(i){const B={};return i.integrity&&(B.integrity=i.integrity),i.referrerPolicy&&(B.referrerPolicy=i.referrerPolicy),i.crossOrigin==="use-credentials"?B.credentials="include":i.crossOrigin==="anonymous"?B.credentials="omit":B.credentials="same-origin",B}function C(i){if(i.ep)return;i.ep=!0;const B=I(i);fetch(i.href,B)}})();function DJ(g){return g&&g.__esModule&&Object.prototype.hasOwnProperty.call(g,"default")?g.default:g}var SJ={exports:{}},qS={},wJ={exports:{}},_I={};/**
  * @license React
  * react.production.min.js
@@ -4186,7 +4187,7 @@ vTroikaGlyphColor = uTroikaUseGlyphColors ? aTroikaGlyphColor / 255.0 : diffuse;
       id: "ux",
       label: "AI 이미지",
       desc: "AI로 제작한 이미지 작업을 전시하는 공간",
-      angle: 52,
+      angle: 60,
       dist: 15,
       size: [5, 3.4, 4.5],
       roof: "#9c8bd8",
@@ -4196,31 +4197,11 @@ vTroikaGlyphColor = uTroikaUseGlyphColors ? aTroikaGlyphColor / 255.0 : diffuse;
       id: "ui",
       label: "AI 영상",
       desc: "AI 영상 제작 결과물을 감상하는 공간",
-      angle: -52,
+      angle: 120,
       dist: 15,
       size: [5, 3.4, 4.5],
       roof: "#6fb3d3",
       body: "#dff4ff",
-    },
-    {
-      id: "brand",
-      label: "AI 3D 오브젝트",
-      desc: "AI로 제작한 3D 오브젝트를 살펴보는 공간",
-      angle: 108,
-      dist: 14,
-      size: [4.5, 3.2, 4],
-      roof: "#eda46f",
-      body: "#ffe4c5",
-    },
-    {
-      id: "threeD",
-      label: "ShapesXR VR",
-      desc: "ShapesXR로 제작한 VR 공간을 체험하는 공간",
-      angle: -108,
-      dist: 14,
-      size: [4.5, 3.6, 4],
-      roof: "#79b994",
-      body: "#dff2df",
     },
     {
       id: "contact",
@@ -4231,6 +4212,26 @@ vTroikaGlyphColor = uTroikaUseGlyphColors ? aTroikaGlyphColor / 255.0 : diffuse;
       size: [4, 3, 3.6],
       roof: "#df87a4",
       body: "#ffe0ea",
+    },
+    {
+      id: "brand",
+      label: "AI 3D 오브젝트",
+      desc: "AI로 제작한 3D 오브젝트를 살펴보는 공간",
+      angle: 240,
+      dist: 15,
+      size: [4.5, 3.2, 4],
+      roof: "#eda46f",
+      body: "#ffe4c5",
+    },
+    {
+      id: "threeD",
+      label: "가상공간",
+      desc: "ShapesXR로 제작한 VR 공간을 체험하는 공간",
+      angle: 300,
+      dist: 15,
+      size: [4.5, 3.6, 4],
+      roof: "#79b994",
+      body: "#dff2df",
     },
   ].map((building) => ({
     ...building,
@@ -12086,6 +12087,37 @@ const vH = "threeD",
   cX = [
     ...Object.values(hX).map((g) => g.default),
     {
+      roomId: "brand",
+      headline: "AI 3D OBJECT",
+      body: "AI로 제작한 3D 오브젝트입니다. 마우스나 터치로 회전하고 확대해 살펴볼 수 있습니다.",
+      media: [
+        { type: "model", src: "./models/astral-crystal-core.glb", caption: "별빛 수정핵" },
+        { type: "model", src: "./models/aurelia-starblade.glb", caption: "오렐리아 별빛검" },
+        { type: "model", src: "./models/azure-crystal-citadel.glb", caption: "푸른 수정 성채" },
+        { type: "model", src: "./models/azure-crystal-cluster.glb", caption: "푸른 수정 군락" },
+        { type: "model", src: "./models/blue-tile-cottage.glb", caption: "푸른 기와집" },
+        { type: "model", src: "./models/emerald-carpet.glb", caption: "에메랄드 양탄자" },
+        { type: "model", src: "./models/aether-skimmer.glb", caption: "에테르 비행정" },
+      ],
+    },
+    {
+      roomId: "ux",
+      headline: "AI IMAGE",
+      body: "AI로 제작한 캐릭터 디자인과 포스터 이미지를 전시하는 공간입니다.",
+      media: [
+        {
+          type: "image",
+          src: "./gimbap-character-sheet.png",
+          caption: "김밥 요정 ‘Gimbap’ 캐릭터 시트",
+        },
+        {
+          type: "image",
+          src: "./incheon-roll-festa-poster.png",
+          caption: "2026 인천 롤 페스타 포스터",
+        },
+      ],
+    },
+    {
       roomId: "ui",
       headline: "AI VIDEO",
       body: "AI로 제작한 몬스터 결투 영상을 감상하는 공간입니다.",
@@ -12144,7 +12176,9 @@ function SX() {
                 BA.jsx("p", { className: "room-body", children: C.body }),
               C?.media?.length
                 ? BA.jsx("div", {
-                    className: "room-media",
+                    className: C.media.every((i) => i.type === "image" || i.type === "model")
+                      ? "room-media room-media-images"
+                      : "room-media",
                     children: C.media.map((i, B) =>
                       i.type === "video"
                         ? BA.jsxs(
@@ -12185,7 +12219,32 @@ function SX() {
                               },
                               B,
                             )
-                          : BA.jsxs(
+                          : i.type === "model"
+                            ? BA.jsxs(
+                                "figure",
+                                {
+                                  className: "model-card",
+                                  children: [
+                                    BA.jsx("model-viewer", {
+                                      src: i.src,
+                                      alt: i.caption ?? "",
+                                      loading: "lazy",
+                                      reveal: "auto",
+                                      "camera-controls": !0,
+                                      "auto-rotate": !0,
+                                      "rotation-per-second": "18deg",
+                                      "shadow-intensity": "1",
+                                      "environment-image": "neutral",
+                                      "interaction-prompt": "auto",
+                                      "touch-action": "pan-y",
+                                    }),
+                                    i.caption &&
+                                      BA.jsx("figcaption", { children: i.caption }),
+                                  ],
+                                },
+                                B,
+                              )
+                            : BA.jsxs(
                             "figure",
                             {
                               children: [
@@ -12682,8 +12741,14 @@ Km(document.getElementById("root")).render(
       .audio-card{padding:22px;border-radius:18px;background:linear-gradient(145deg,rgba(244,163,183,.16),rgba(255,213,140,.14));border:1px solid rgba(255,231,194,.24)}
       .audio-cover{width:88px;height:88px;margin:2px auto 18px;display:flex;align-items:center;justify-content:center;border-radius:50%;font-size:38px;color:#664b5a;background:linear-gradient(145deg,#ffdca2,#f2a8c4);box-shadow:0 12px 36px rgba(244,163,183,.28)}
       .room-media audio{display:block;width:100%;height:48px}
+      .room-media-images{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:start;max-height:58vh;gap:18px}
+      .room-media-images figure{min-width:0}
+      .room-media-images img{width:100%;height:auto;object-fit:contain;background:#f5ead8}
       .audio-card figcaption{text-align:center;color:#fff4e5;font-size:14px;letter-spacing:.04em}
-      @media(max-width:720px){.loading-screen:after{display:none}.hud-brand h1{font-size:23px}.loading-title{font-size:clamp(36px,14vw,58px)}.loading-hint{bottom:22px;padding:0 18px;text-align:center;line-height:1.6}.room-panel{padding:28px 24px}.room-title{font-size:32px}}
+      .model-card{min-width:0;padding:10px;border-radius:16px;background:linear-gradient(145deg,rgba(255,255,255,.1),rgba(150,213,176,.1));border:1px solid rgba(255,231,194,.2)}
+      .model-card model-viewer{display:block;width:100%;height:300px;border-radius:12px;background:radial-gradient(circle at 50% 36%,#eef7ff 0%,#cfd9e8 58%,#aebbd0 100%);--poster-color:transparent}
+      .model-card figcaption{text-align:center;color:#fff4e5;font-size:14px;letter-spacing:.02em}
+      @media(max-width:720px){.room-media-images{grid-template-columns:1fr}.loading-screen:after{display:none}.hud-brand h1{font-size:23px}.loading-title{font-size:clamp(36px,14vw,58px)}.loading-hint{bottom:22px;padding:0 18px;text-align:center;line-height:1.6}.room-panel{padding:28px 24px}.room-title{font-size:32px}}
     </style>
   </head>
   <body>
