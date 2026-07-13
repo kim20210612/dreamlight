@@ -12063,7 +12063,7 @@ const vH = "threeD",
   bH = [
     {
       type: "video",
-      src: "assets/videos/shapesxr.mp4",
+      src: "./shapesxr.mp4",
       caption: "ShapesXR VR 공간 프로토타입",
     },
   ],
@@ -12092,7 +12092,7 @@ const vH = "threeD",
       media: [
         {
           type: "video",
-          src: "assets/videos/monster-battle.mp4",
+          src: "./monster-battle.mp4",
           caption: "몬스터 결투 · AI 영상",
         },
       ],
@@ -12104,7 +12104,7 @@ const vH = "threeD",
       media: [
         {
           type: "audio",
-          src: "assets/audio/forever-free.mp3",
+          src: "./forever-free.mp3",
           caption: "Forever Free",
         },
       ],
@@ -12154,9 +12154,10 @@ function SX() {
                                 BA.jsx("video", {
                                   src: i.src,
                                   controls: !0,
-                                  autoPlay: !0,
-                                  muted: !0,
-                                  loop: !0,
+                                  autoPlay: !1,
+                                  muted: !1,
+                                  loop: !1,
+                                  preload: "metadata",
                                   playsInline: !0,
                                 }),
                                 i.caption &&
@@ -12175,8 +12176,8 @@ function SX() {
                                   BA.jsx("audio", {
                                     src: i.src,
                                     controls: !0,
-                                    autoPlay: !0,
-                                    preload: "metadata",
+                                    autoPlay: !1,
+                                    preload: "auto",
                                   }),
                                   i.caption &&
                                     BA.jsx("figcaption", { children: i.caption }),
