@@ -1,2 +1,2 @@
-Dreamlight Village deployment version: 20260720-v11
-Distinct roof colors, wider works modal, 2-col 3D grid, sign polish.
+Dreamlight Village deployment version: 20260720-v14
+Dog no longer clips into buildings (collider margins).
