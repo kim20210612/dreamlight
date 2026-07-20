@@ -1,2 +1,2 @@
-Dreamlight Village deployment version: 20260720-v8
-Absolute media URLs, tighter paragraphs, doors face plaza.
+Dreamlight Village deployment version: 20260720-v10
+English door signs with tighter letter spacing.
