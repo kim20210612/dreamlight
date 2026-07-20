@@ -1,2 +1,2 @@
-Dreamlight Village deployment version: 20260720-v15
-Fix: sign font 404 crashed the 3D scene. Correct CDN path + sign error isolation.
+Dreamlight Village deployment version: 20260720-v12
+Sign position formula + Pretendard font on door signs.
