@@ -1,2 +1,2 @@
-Dreamlight Village deployment version: 20260720-v7
-Intro rewrite (200%), contact desc, copy polish.
+Dreamlight Village deployment version: 20260720-v8
+Absolute media URLs, tighter paragraphs, doors face plaza.
