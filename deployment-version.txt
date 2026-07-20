@@ -1,2 +1,2 @@
-Dreamlight Village deployment version: 20260720-v22
-File card hover fix, stable PDF paths for easy replacement.
+Dreamlight Village deployment version: 20260720-v23
+Config scripts moved to /scripts folder.
