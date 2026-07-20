@@ -1,2 +1,2 @@
-Dreamlight Village deployment version: 20260720-v24
-Custom scrollbar for panels.
+Dreamlight Village deployment version: 20260720-v25
+BGM off by default, scrollbar contained within rounded panel.
