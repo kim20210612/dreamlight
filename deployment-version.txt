@@ -1,2 +1,2 @@
-Dreamlight Village deployment version: 20260720-v12
-Sign position formula + Pretendard font on door signs.
+Dreamlight Village deployment version: 20260720-v17
+Full consistent redeploy: self-hosted sign font, no postprocessing on mobile.
