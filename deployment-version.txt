@@ -1,2 +1,2 @@
-Dreamlight Village deployment version: 20260720-v14
-Dog no longer clips into buildings (collider margins).
+Dreamlight Village deployment version: 20260720-v15
+Fix: sign font 404 crashed the 3D scene. Correct CDN path + sign error isolation.
