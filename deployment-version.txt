@@ -1,2 +1,2 @@
-Dreamlight Village deployment version: 20260720-v6
-BGM toggle, map click-to-move, center spawn, copy updates.
+Dreamlight Village deployment version: 20260720-v7
+Intro rewrite (200%), contact desc, copy polish.
