@@ -1,2 +1,2 @@
-Dreamlight Village deployment version: 20260720-v20
-All media switched to root-relative paths.
+Dreamlight Village deployment version: 20260720-v22
+File card hover fix, stable PDF paths for easy replacement.
