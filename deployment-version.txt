@@ -1,2 +1,2 @@
-Dreamlight Village deployment version: 20260720-v23
-Config scripts moved to /scripts folder.
+Dreamlight Village deployment version: 20260720-v24
+Custom scrollbar for panels.
